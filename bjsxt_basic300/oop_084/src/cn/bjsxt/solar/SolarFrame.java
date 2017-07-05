@@ -43,18 +43,13 @@ public class SolarFrame extends JFrame{
 		});
 	}
 
-	private double x = 100, y = 100;
-	
-	private double degree = 3.14 / 3;
-	private double speed = 10;
-
 
 	@Override
 	public void paint(Graphics g) {
 		super.paint(g);
 		g.drawImage(bg, 0, 0, null);
 		sun.drawImage(g);
-		earth.drawImage(g);
+		earth.draw(g);
 	}
 
 

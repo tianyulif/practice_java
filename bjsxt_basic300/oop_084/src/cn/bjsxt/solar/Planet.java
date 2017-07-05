@@ -22,7 +22,7 @@ public class Planet extends Star{
 		x = center.x + longAxis* Math.cos(degree);
 		y = center.y + longAxis * Math.sin(degree);
 		degree += speed;
-
+		System.out.println("degree:"+degree);
 	}
 	
 	public Planet(Star center, String imgpath, double longAxis, double shortAxis, double speed) {
