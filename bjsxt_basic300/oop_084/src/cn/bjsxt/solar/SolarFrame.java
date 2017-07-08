@@ -23,6 +23,9 @@ public class SolarFrame extends JFrame{
 	Star sun = new Star("images/sun.jpg", Constant.GAME_WIDTH / 2, Constant.GAME_HEIGTH / 2);
 	
 	Planet earth = new Planet(sun, "images/Earth.jpg", 150, 100, 0.1);
+	
+	Planet mars = new Planet(sun, "images/Mars.jpg", 200, 130, 0.2);
+
 	/**
 	 * 加载窗体
 	 */
@@ -50,6 +53,7 @@ public class SolarFrame extends JFrame{
 		g.drawImage(bg, 0, 0, null);
 		sun.drawImage(g);
 		earth.draw(g);
+		mars.draw(g);
 	}
 
 

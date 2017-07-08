@@ -1,5 +1,6 @@
 package cn.bjsxt.solar;
 
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Image;
 
@@ -19,11 +20,30 @@ public class Planet extends Star{
 	public void draw(Graphics g) {
 		g.drawImage(img, (int) x, (int) y, null);
 		// 沿着椭圆轨迹飞
+		move();
+		drawTrace(g);
+	}
+	
+	public void move(){
 		x = center.x + longAxis* Math.cos(degree);
 		y = center.y + longAxis * Math.sin(degree);
 		degree += speed;
-		System.out.println("degree:"+degree);
 	}
+	
+	public void drawTrace(Graphics g){
+		double ovalX,ovalY,ovalWidth,ovalHeight;
+		
+		ovalWidth = longAxis*2;
+		ovalHeight = shortAxis*2;
+		ovalX = (center.x+30)-longAxis;
+		ovalY = (center.y+30)-shortAxis;
+		
+		Color c =g.getColor();
+		g.setColor(Color.blue);
+		g.drawOval((int)ovalX, (int)ovalY, (int)ovalWidth, (int)ovalHeight);
+		g.setColor(c);
+	}
+
 	
 	public Planet(Star center, String imgpath, double longAxis, double shortAxis, double speed) {
 		this(imgpath, center.x + longAxis , center.y);
