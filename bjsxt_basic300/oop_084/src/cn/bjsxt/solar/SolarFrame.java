@@ -74,7 +74,6 @@ public class SolarFrame extends JFrame{
 	public static void main(String[] args) {
 		SolarFrame gf = new SolarFrame();
 		gf.launchFrame();
-
 	}
 
 }

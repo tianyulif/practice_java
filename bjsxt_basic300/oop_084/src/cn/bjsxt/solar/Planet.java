@@ -25,8 +25,8 @@ public class Planet extends Star{
 	}
 	
 	public void move(){
-		x = center.x + longAxis* Math.cos(degree);
-		y = center.y + longAxis * Math.sin(degree);
+		x = (center.x+center.width/2) + longAxis*Math.cos(degree);
+		y = (center.y+center.height/2)+ shortAxis*Math.sin(degree);
 		degree += speed;
 	}
 	
@@ -35,8 +35,8 @@ public class Planet extends Star{
 		
 		ovalWidth = longAxis*2;
 		ovalHeight = shortAxis*2;
-		ovalX = (center.x+30)-longAxis;
-		ovalY = (center.y+30)-shortAxis;
+		ovalX = (center.x+center.width/2)-longAxis;
+		ovalY = (center.y+center.height/2)-shortAxis;
 		
 		Color c =g.getColor();
 		g.setColor(Color.blue);
