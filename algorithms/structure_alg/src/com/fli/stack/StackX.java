@@ -42,7 +42,7 @@ public class StackX <T>{
 	 * @param args
 	 */
 	public static void main(String[] args) {
-	/*	StackX<Long> s = new StackX<Long>(5);
+		StackX<Long> s = new StackX<Long>(5);
 		System.out.println(s.push(20L));
 		System.out.println(s.push(30L));
 		System.out.println(s.push(40L));
@@ -52,16 +52,8 @@ public class StackX <T>{
 		do{
 			System.out.println(s.peek()+"---peek");
 			System.out.println(s.pop()+"---pop");
-		}while(!s.isEmpty());*/
+		}while(!s.isEmpty());
 		
-		LinkedList<Integer> ll = new LinkedList<Integer>();
-		ll.add(10);
-		ll.add(20);
-		ll.add(30);
-		Iterator<Integer> it = ll.iterator();
-		while(it.hasNext()){
-			System.out.println(it.next());
-		}
 	}
 
 }
