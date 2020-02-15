@@ -1,9 +1,13 @@
-              java base practice
-oop_084 SolarFrame
-1. 面对对象的练习，主要功能：八大行星围绕恒星转，并划出轨迹。
-2. 抽象出三个主要对象，窗体、恒星和行星
-3. 窗体首先定义坐标位置，长和宽，是否可见，repaint线程 paint画图
-4. 恒星，定义坐标，画出图片，考虑图片的长度和宽度
-5. 行星继承恒星，新增运动轨迹（坐标位移）和画出运动轨迹（Graphics.drawOval()）
+#                            java基础练习
+
+### 一、core_java(java核心练习)
+
+### 二、 [algorithms](https://github.com/tianyulif/practice_java/tree/master/algorithms) （java算法练习）
+
+### 三、Springboot
+
+
+
+### 四、SpringCloud
 
 
