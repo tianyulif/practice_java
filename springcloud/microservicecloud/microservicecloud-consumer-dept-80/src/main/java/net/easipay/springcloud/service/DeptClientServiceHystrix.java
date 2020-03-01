@@ -16,7 +16,7 @@ public class DeptClientServiceHystrix implements DeptClientService{
 
     @Override
     public Dept add(Dept dept) {
-        return new Dept().setId(0L).setDeptName("该ID："+id+"没有没有对应的信息,null--@HystrixCommand")
+        return new Dept().setId(0L).setDeptName("该ID没有没有对应的信息,null--@HystrixCommand")
                 .setDbSource("no this database in MySQL");
     }
 
